@@ -5,6 +5,10 @@
 {% block content %}
   <p>{{ message }}</p>
   <p>{{ time }}</p>
+  {% for article in articles %}
+    <p>{{ article.ID }} : {{ article.Title }}</p>
+  {% endfor %}
+
 {% endblock %}
 {% block js %}
   <script src="/js/article/index.js"></script>
