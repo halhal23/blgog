@@ -1,0 +1,11 @@
+{% extends "../layout.html" %}
+{% block css %}
+  <link rel="stylesheet" href="/css/article/new.css">
+{% endblock %}
+{% block title %}
+  New | {{ block.Super }}
+{% endblock %}
+{% block content %}
+  <p>{{ message }}</p>
+  <p>{{ time }}</p>
+{% endblock %}
