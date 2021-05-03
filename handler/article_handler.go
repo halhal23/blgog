@@ -16,7 +16,7 @@ func ArticleIndex(c echo.Context) error {
 		c.NoContent(http.StatusInternalServerError)
 	}
 	data := map[string]interface{}{
-		"message":  "Hello Hello desune",
+		"message":  "Hello Hello hot reloaded",
 		"time":     time.Now(),
 		"articles": articles,
 	}
